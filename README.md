@@ -1,4 +1,4 @@
-# Unity_Quest_And_Answer_System
+# Unity Quest & Answer System
 Abstraction and Simple realization of Quest/Answer system in Unity 3D. Easy to use as scaffolding for quiz-like games.
 
 ### Screenshots:
