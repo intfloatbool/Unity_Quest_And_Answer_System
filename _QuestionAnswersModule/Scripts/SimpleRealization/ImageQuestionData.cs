@@ -1,6 +1,6 @@
 ﻿using System.Linq;
 using _QuestionAnswersModule.Scripts.Base;
-using _QuestionAnswersModule.Scripts.Static;
+using QuestBase._QuestionAnswersModule.Scripts.Static;
 using UnityEngine;
 
 namespace _QuestionAnswersModule.Scripts.SimpleRealization

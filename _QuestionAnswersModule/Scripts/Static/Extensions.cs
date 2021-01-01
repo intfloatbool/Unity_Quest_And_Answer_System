@@ -1,7 +1,28 @@
 ﻿using System.Collections.Generic;
+using UnityEngine;
 
-namespace _QuestionAnswersModule.Scripts.Static
+namespace QuestBase._QuestionAnswersModule.Scripts.Static
 {
+    public static class GameHelper
+    {
+        public static void DebugLogEditorOnly(object msg)
+        {
+#if UNITY_EDITOR
+            Debug.Log(msg);
+#endif
+        }
+
+        public static bool CheckForNull<T>(T instance)
+        {
+            if (instance == null)
+            {
+                Debug.LogError($"{typeof(T).Name} is missing!");
+                return false;
+            }
+
+            return true;
+        }
+    }
     public static class Extensions
     {
         public static void Shuffle<T>(this IList<T> ts) {
