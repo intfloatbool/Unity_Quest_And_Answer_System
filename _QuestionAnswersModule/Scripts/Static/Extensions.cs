@@ -35,5 +35,13 @@ namespace QuestBase._QuestionAnswersModule.Scripts.Static
                 ts[r] = tmp;
             }
         }
+
+        public static void SetActiveFast(this GameObject gameObject, bool isActive)
+        {
+            if (gameObject.activeInHierarchy != isActive)
+            {
+                gameObject.SetActive(isActive);
+            }
+        }
     }
 }
